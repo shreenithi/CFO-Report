@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=1024">
+		<title>Example 3 - Animated Bar Chart via jQuery</title>
+		<link rel="stylesheet" href="common.css">
+		<link rel="stylesheet" href="03.css">
+	</head>
+	<body>
+		<div class="toggles" style="top: 50px; position: relative;">
+			<p><a href="#" id="reset-graph-button">Reset graph</a>
+		</div>
+		<div id="wrapper">
+			<div class="chart">
+				<h2>Stage &ndash; Wise Report</h2>
+				<table id="data-table" border="1" cellpadding="10" cellspacing="0">
+					<caption>Number Of Customers</caption>
+					<thead>
+						<tr>
+							<td>&nbsp;</td>
+							<th scope="col">1</th>
+							<th scope="col">2</th>
+							<th scope="col">3</th>
+							<th scope="col">4</th>
+							<th scope="col">5</th>
+							<th scope="col">6</th>
+							<th scope="col">7</th>
+							<th scope="col">8</th>
+							<th scope="col">9</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">Stages</th>
+							<td>4080</td>
+							<td>6080</td>
+							<td>6240</td>
+							<td>3520</td>
+							<td>2240</td>
+							<td>6080</td>
+							<td>6240</td>
+							<td>3520</td>
+							<td>2240</td>
+						</tr>
+						
+					</tbody>
+				</table>
+
+				<ul class="legend" style="postion:relative; width:100%; height:130px; margin-top:150px;">
+					<li><span class="icon fig0"></span>Day 1-4</li>
+					<li><span class="icon fig1"></span>Day 5-7</li>
+					<li><span class="icon fig2"></span>Day 8-11</li>
+					<li><span class="icon fig3"></span>Day 12-18</li>
+					<li><span class="icon fig4"></span>Day 19-21</li>
+					<li><span class="icon fig5"></span>Day 22</li>
+					<li><span class="icon fig6"></span>Day 23-25</li>
+					<li><span class="icon fig7"></span>Day 26-29</li>
+					<li><span class="icon fig8"></span>Day 30</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- JavaScript at the bottom for fast page loading -->
+		
+		<!-- Grab jQuery from Google -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		
+		<!-- Example JavaScript -->
+		<script src="03.js"></script>
+		
+	</body>
+</html>

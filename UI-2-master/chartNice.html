@@ -1,0 +1,234 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=1024">
+		<title>Example 3 - Animated Bar Chart via jQuery</title>
+		<link rel="stylesheet" href="common.css">
+		<link rel="stylesheet" href="03.css">
+	</head>
+	<body>
+		<div class="toggles">
+			<!-- <p><a href="#" id="reset-graph-button">Reset graph</a><a href="http://coding.smashingmagazine.com/?p=106408" id="return-button">Back to Article</a> Mouse over the bars to display information.</p> -->
+		</div>
+		<div id="wrapper">
+			<div class="chart">
+				<h2>Customers in various stages of Delinquency</h2>
+				<!-- <table id="data-table" border="1" cellpadding="10" cellspacing="0">
+					<caption>No of Customers per Stage</caption>
+					<thead>
+						<tr>
+							<td>&nbsp;</td>
+							<th scope="col">Stage-1</th>
+							<th scope="col">Stage-2</th>
+							<th scope="col">Stage-3</th>
+							<th scope="col">Stage-4</th>
+							<th scope="col">Stage-5</th>
+							<th scope="col">Stage-6</th>
+							<th scope="col">Stage-7</th>
+							<th scope="col">Stage-8</th>
+							<th scope="col">Stage-9</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">StageOne</th>
+							<td>4080</td>
+							
+						</tr>
+						<tr>
+							<th scope="row">StageTwo</th>							
+							<td>5120</td>							
+						</tr>
+						<tr>
+							<th scope="row">StageThree</th>							
+							<td>4720</td>							
+						</tr>
+
+						<tr>
+							<th scope="row">StageFour</th>							
+							<td>1760</td>							
+						</tr>
+
+						<tr>
+							<th scope="row">StageFive</th>							
+							<td>7520</td>
+						</tr>
+
+						<tr>
+							<th scope="row">StageSix</th>							
+							<td>7520</td>
+						</tr>
+
+						<tr>
+							<th scope="row">StageSeven</th>
+							<td>4720</td>							
+						</tr>
+
+						<tr>
+							<th scope="row">StageEight</th>						
+							<td>2880</td>							
+						</tr>
+
+						<tr>
+							<th scope="row">StageNine</th>
+							<td>1040</td>
+							
+						</tr>
+					</tbody>
+				</table>
+ -->
+				<div id="figure">
+					<h4>No. of Delinquent Cusotomers in Each Stage</h4>				
+
+					<div class="graph">
+						<ul class="x-axis">
+							<li>
+								<span>1</span>
+							</li>
+							<li>
+								<span>2</span>
+							</li>
+							<li>
+								<span>3</span>
+							</li>
+							<li>
+								<span>4</span>
+							</li>
+							<li>
+								<span>5</span>
+							</li>
+							<!-- <li>
+								<span>6</span>
+							</li>
+							<li>
+								<span>7</span>
+							</li>
+							<li>
+								<span>8</span>
+							</li>
+							<li>
+								<span>9</span>
+							</li> -->
+						</ul>
+						<ul class="y-axis">
+							<li>
+								<span>8</span>
+							</li>
+							<li>
+								<span>6</span>
+							</li>
+							<li>
+								<span>4</span>
+							</li>
+							<li>
+								<span>2</span>
+							</li>
+							<li>
+								<span>0</span>
+							</li>
+						</ul>
+						<div class="bars">
+							<div class="bar-group">
+								<div class="bar fig0" style="height: 76%">
+									<span>6080</span>
+								</div>
+							</div>
+							<div class="bar-group">
+								<div class="bar fig1" style="height: 76%">
+									<span>6080</span>
+								</div>
+							</div>
+							<div class="bar-group">
+								<div class="bar fig2" style="height: 76%">
+									<span>6080</span>
+								</div>
+							</div>
+							<div class="bar-group">
+								<div class="bar fig3" style="height: 76%">
+									<span>6080</span>
+								</div>
+							</div>
+							<div class="bar-group">
+								<div class="bar fig4" style="height: 76%">
+									<span>6080</span>
+								</div>
+							</div>
+							<div class="bar-group">
+								<div class="bar fig5" style="height: 76%">
+									<span>6080</span>
+								</div>
+							</div>
+							<div class="bar-group">
+								<div class="bar fig6" style="height: 76%">
+									<span>6080</span>
+								</div>
+							</div>
+							<div class="bar-group">
+								<div class="bar fig7" style="height: 76%">
+									<span>6080</span>
+								</div>
+							</div>
+							<div class="bar-group">
+								<div class="bar fig8" style="height: 76%">
+									<span>6080</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="legend" style="postion:relative; width:100%; background:#000; height:130px; margin-top:20px;">
+						<ul >
+						<li>
+							<span class="icon fig0"></span>
+							Stage-1							
+						</li>
+						<li>
+							<span class="icon fig1"></span>
+							Stage-2						
+						</li>
+						<li>
+							<span class="icon fig2"></span>
+							Stage-3							
+						</li>
+						<li>
+							<span class="icon fig3"></span>
+							Stage-4							
+						</li>
+						<li>
+							<span class="icon fig4"></span>
+							Stage-5							
+						</li>
+						<li>
+							<span class="icon fig5"></span>
+							Stage-6							
+						</li>
+						<li>
+							<span class="icon fig6"></span>
+							Stage-7							
+						</li>
+						<li>
+							<span class="icon fig7"></span>
+							Stage-8							
+						</li>
+						<li>
+							<span class="icon fig8"></span>
+							Stage-9							
+						</li>
+					</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- JavaScript at the bottom for fast page loading -->
+		
+		<!-- Grab jQuery from Google -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		
+		<!-- Example JavaScript
+		 <script src="03.js"></script> -->
+		
+	</body>
+</html>
